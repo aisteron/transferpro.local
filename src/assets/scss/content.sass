@@ -1,0 +1,182 @@
+.wrapper
+	>.transfers
+		background-image: url(/assets/img/bg1.jpg)
+		padding-top: 90px
+		@media (max-width: 560px)
+			padding-top: 1rem
+		.item
+			width: 1140px
+			margin: 0 auto
+			padding: 45px 85px
+			background: #ffffffeb
+			border-radius: 5px
+			box-shadow: 0 3px 6px #1111112b
+			&:first-of-type
+				margin: 0 auto 90px
+				@media (max-width: 560px)
+					border-radius: 0
+					margin: 2rem 0
+			@media (max-width: 1140px)
+				width: 100%
+			@media (max-width: 560px)	
+				padding: 1rem
+				border-radius: 0
+
+			h2
+				font-size: 51px
+				@media (max-width: 560px)
+					font-size: 2rem
+			p
+				font-size: 23px
+				margin: 1rem 0
+				font-weight: bold
+			ul
+				font-size: 23px
+				li
+					line-height: 37px			
+	>.park
+		padding-top: 3rem
+
+		h2
+			font-size: 51px
+			padding: 25px 65px
+			@media (max-width: 560px)
+				padding: 0
+		.list
+			width: 1140px
+			margin: 0 auto
+			background-color: #ffffffeb
+			border-radius: 5px
+			box-shadow: 0 3px 6px #1111112b
+			padding: 29px
+			@media (max-width: 1140px)
+				width: 100%
+			@media (max-width: 560px)
+				padding: 1rem
+				border-radius: 0	
+			.item	
+				display: flex
+				&:nth-of-type(2)
+					margin: 3rem 0
+				@media (max-width: 840px)
+					flex-wrap: wrap
+				@media (max-width: 560px)
+					img
+						width: 100%	
+				.desc
+					padding-top: 3rem
+					span.seats
+						color: #707070
+						font-size: 22px
+						display: block
+						margin-top: 28px
+					
+
+			h3
+				color: #707070
+				font-size: 41px
+				text-transform: uppercase			
+	>.more
+		padding: 3rem 0
+		.inner
+			width: 1140px
+			margin: 0 auto
+			background-color: #ffffffeb
+			border-radius: 5px
+			box-shadow: 0 3px 6px #1111112b
+			padding: 45px 85px
+			@media (max-width: 1140px)
+				width: 100%
+				padding: 1rem
+
+			h2
+				font-size: 51px
+				margin-bottom: 2rem
+			p
+				font-size: 23px
+				line-height: 28px
+				margin: 1.5rem 0
+				img
+					vertical-align: bottom
+					margin: 0 0.5rem			
+	footer
+		background: #fff
+		.inner
+			width: 1140px
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+			padding: 1rem 0
+			@media (max-width: 1140px)
+				width: 100%
+				padding: 1rem
+			@media (max-width: 560px)
+				flex-wrap: wrap				
+			.wrap
+				display: flex
+				align-items: center
+				@media (max-width: 560px)
+					flex-wrap: wrap	
+				.phone
+					margin-right: 2rem
+					a
+						font-size: 23px
+						font-weight: bold
+						text-decoration: none
+						color: #111
+					span.mail
+						display: block
+						font-size: 18px
+						margin-top:  8px
+				.social
+					@media (max-width: 370px)
+						margin: 1rem 0
+					img
+						margin-right: 1rem
+			.ip
+				p
+					margin: 1rem 0
+					color: #707070			
+	>.modal
+		display: none
+		position: fixed
+		z-index: 1
+		padding-top: 100px
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		overflow: auto
+		background-color: rgb(0,0,0)
+		background-color: rgba(0,0,0,0.4)
+		.modal-content
+			background-color: #fefefe
+			position: relative
+			margin: auto
+			padding: 20px
+			border: 1px solid #888
+			width: 300px
+			animation-name: animatetop
+			animation-duration: 0.4s
+			span.close
+				position: absolute
+				right: -1rem
+				top: -1.5rem
+				color: #fff
+				text-shadow: 1px 1px 1px #333
+				font-size: 1.5rem
+				cursor: pointer
+			input
+				display: block
+				padding: 0.5rem
+				margin: 0.5rem 0
+				&[type="submit"]
+					background-color: #fff
+					border: 1px solid #333
+					outline: none
+					border-radius: 5px
+					cursor: pointer
+					&:hover
+						background-color: #eee
+
+
