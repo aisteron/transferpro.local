@@ -4,7 +4,8 @@
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 
-$to = 'timotheus@list.ru'; // test mode
+//$to = 'timotheus@list.ru'; // test mode
+$to = 'timotheus@list.ru, vini.l@mail.ru'; // prod mode
 
 // Subject
 $subject = 'Перезвонить с лендинга';
